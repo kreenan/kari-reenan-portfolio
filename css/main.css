@@ -1,77 +1,114 @@
 /***** BASE STYLES *****/
-header, body {
-    font-family: Raleway, Helvetic, sans-serif;
+h1, h2, h3, h4, h5 {
+    font-family: Montserrat, Helvetica, sans-serif;
 }
-
-
+body p {
+    font-family: Cardo, Arial, sans-serif;
+}
 
 
 /***** GRID *****/
+ .full-width {
+     width: 1200px;
+     margin: 0 auto;
+     clear: both;
+ }
 
-.full-width {
-    width: 100%;
-    margin: 0 auto;
-}
+ .half-width {
+     width: 580px;
+     padding-left: 10px;
+     padding-right: 10px;
+     float: left;
+ }
 
-.half-width {
-    width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
-    float: left;
-}
+ .third-width {
+     width: 380px;
+     padding-left: 10px;
+     padding-right: 10px;
+     float: left;
+ }
 
-#about {
-    height: 500px;
-}
 
-/***** LANDING PAGE *****/
-
+/***** HEADER *****/
 header {
-    background: url('../img/yellow-pink-wall.jpg');
-    height: 600px;
+    background-image: url('../img/yellow-pink-wall.jpg');
     background-size: cover;
+    height: 600px;
+}
+
+header .full-width {
+    padding-top: 100px;
+}
+
+header h1, header h3 {
     text-align: center;
+    color: white;
 }
 
 header h1 {
-    padding-top: 250px;
-    font-size: 100px;
-    color: white;
-    letter-spacing: 3px;
+    font-size: 130px;
+    font-weight: 400;
 }
 
 header h3 {
-    color: white;
     font-size: 50px;
+    font-weight: 200;
 }
 
-header nav {
+/***** WORK *****/
+#work {
+    height: 800px;
+}
+
+#work h4 {
     text-align: center;
-    padding: 5px 0px 5px 0px;
-    background-color: white;
-    opacity: .5;
-
+    font-size: 30px;
 }
 
-header nav ul {
-    list-style: none;
+#work h5 {
+    font-weight: 200;
+    font-size: 25px;
 }
 
-header nav ul li {
-    display: inline-block;
-    padding-right: 40px;
+#work img {
+    height: 300px;
+    width: 500px;
+    padding-bottom: 30px;
 }
 
-header nav ul li a {
-    text-decoration: none;
-}
 
 /***** ABOUT *****/
 
 #about {
-    background-color: whitesmoke;
+    background: #FECC17;
+    height: 400px;
 }
 
-#about h2 {
-    padding-left: 2%;
+#about h4 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#about img {
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/***** CONTACT *****/
+#contact {
+    height: 300px;
+}
+
+#contact h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#contact p {
+    text-align: center;
 }
