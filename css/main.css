@@ -27,30 +27,30 @@ header, body {
 /***** LANDING PAGE *****/
 
 header {
-    background: url('../img/abstract-paint-background.jpg');
-    height: 700px;
+    background: url('../img/yellow-pink-wall.jpg');
+    height: 600px;
     background-size: cover;
     text-align: center;
 }
 
 header h1 {
-    padding-top: 150px;
+    padding-top: 250px;
     font-size: 100px;
     color: white;
     letter-spacing: 3px;
-    margin-bottom: -5px;
 }
 
 header h3 {
     color: white;
     font-size: 50px;
-    margin-top: -10px;
 }
 
 header nav {
-    text-align: right;
-    padding-top: 30px;
-    padding-right: 40px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+    opacity: .5;
+
 }
 
 header nav ul {
@@ -59,7 +59,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding-left: 20px;
+    padding-right: 40px;
 }
 
 header nav ul li a {
