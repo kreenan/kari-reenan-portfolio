@@ -107,6 +107,13 @@ header h3 {
     display: block;
 }
 
+#about p {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-weight: 200;
+    padding-right: 40px;
+    line-height: 25px;
+}
+
 
 /***** CONTACT *****/
 #contact {
