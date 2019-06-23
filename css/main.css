@@ -2,7 +2,7 @@
 h1, h2, h3, h4, h5 {
     font-family: Montserrat, Helvetica, sans-serif;
 }
-body p {
+header a, body p {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 200;
 }
@@ -30,7 +30,7 @@ body p {
  }
 
 
-/***** HEADER *****/
+/***** HEADER MAIN PAGE*****/
 header {
     background-image: url('../img/yellow-pink-wall.jpg');
     background-size: cover;
@@ -50,6 +50,7 @@ header h1 {
     font-size: 130px;
     font-weight: 400;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 header h3 {
@@ -57,7 +58,26 @@ header h3 {
     font-weight: 200;
 }
 
-/***** WORK *****/
+header nav {
+    text-align: right;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    line-height: 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/***** WORK MAIN PAGE*****/
 #work {
     height: 800px;
 }
@@ -88,7 +108,7 @@ header h3 {
 }
 
 
-/***** ABOUT *****/
+/***** ABOUT MAIN PAGE*****/
 
 #about {
     background: #FECC17;
@@ -112,7 +132,7 @@ header h3 {
 }
 
 
-/***** CONTACT *****/
+/***** CONTACT MAIN PAGE*****/
 #contact {
     height: 350px;
     background: whitesmoke;
@@ -138,11 +158,17 @@ header h3 {
 
 #contact ul {
     list-style: none;
+    text-align: center;
 }
 
 #contact ul li {
     display: inline-block;
     padding-right: 25px;
+
+}
+
+#contact ul li a img {
+    margin-top: 0px;
 }
 
 #contact a {
@@ -155,4 +181,38 @@ header h3 {
     margin-top: 40px;
     display: block;
     border-radius: 100px;
+}
+
+/***** WORK PAGE *****/
+
+.work-page header {
+    height: 100px;
+}
+
+.work-page header .full-width {
+    padding-top: 0px;
+}
+
+.work-page header p {
+    margin: 0;
+    padding-top: 40px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.work-page nav {
+    text-align: right;
+    padding-top: 40px;
+}
+
+.work-page ul {
+    margin: 0px;
+}
+
+.work-page ul li {
+    display: inline-block;
+    padding-right: 25px;
+
 }
