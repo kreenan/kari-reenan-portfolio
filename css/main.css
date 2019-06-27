@@ -34,7 +34,7 @@ header a, body p {
 header {
     background-image: url('../img/yellow-pink-wall.jpg');
     background-size: cover;
-    height: 600px;
+    height: 700px;
 }
 
 header .full-width {
@@ -111,9 +111,15 @@ header ul li a {
 /***** ABOUT MAIN PAGE*****/
 
 #about {
-    background: #FECC17;
+    background: url('../img/forty-six-pattern.png') repeat;
     height: 500px;
+    padding-top: 50px;
 }
+ .about-section {
+     background-color: rgb(254, 204, 23, .8);
+     height: 450px;
+     display: inline-block;
+ }
 
 #about h4 {
     font-size: 30px;
@@ -126,9 +132,10 @@ header ul li a {
 #about p {
     font-family: Montserrat, Helvetica, sans-serif;
     font-weight: 200;
-    padding-right: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
     line-height: 25px;
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -183,7 +190,7 @@ header ul li a {
     border-radius: 100px;
 }
 
-/***** WORK PAGE *****/
+/***** WORK PAGE IN PROGRESS
 
 .work-page header {
     height: 100px;
@@ -216,3 +223,4 @@ header ul li a {
     padding-right: 25px;
 
 }
+*****/
