@@ -79,7 +79,7 @@ header ul li a {
 
 /***** WORK MAIN PAGE*****/
 #work {
-    height: 800px;
+    overflow: auto;
 }
 
 #work h4 {
