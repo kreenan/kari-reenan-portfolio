@@ -32,7 +32,7 @@ header a, body p {
 
 /***** HEADER MAIN PAGE*****/
 header {
-    background-image: url('../img/yellow-pink-wall.jpg');
+    background-image: url('../img/yellow-flower-in-jars.jpg');
     background-size: cover;
     height: 700px;
 }
@@ -43,7 +43,7 @@ header .full-width {
 
 header h1, header h3 {
     text-align: center;
-    color: white;
+    color: #2F4F4F;
 }
 
 header h1 {
@@ -72,7 +72,7 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    color: white;
+    color: #2F4F4F;
     font-weight: 400;
     font-size: 20px;
 }
@@ -111,31 +111,31 @@ header ul li a {
 /***** ABOUT MAIN PAGE*****/
 
 #about {
-    background: url('../img/forty-six-pattern.png') repeat;
-    height: 500px;
+    background: url('../img/white-sand.jpg');
+    background-size: cover;
+    height: 600px;
     padding-top: 50px;
 }
- .about-section {
-     background-color: rgb(254, 204, 23, .8);
+/*** .about-section {
+     background-color: rgb(255,255, 255, .2);
      height: 450px;
      display: inline-block;
- }
+     padding-top: 100px;
+ }***/
 
-#about h4 {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 400;
-    padding-top: 30px;
+#about span {
+    color: #002db3;
+    font-weight: 300;
+    font-size: 25px;
 }
-
 
 #about p {
     font-family: Montserrat, Helvetica, sans-serif;
     font-weight: 200;
-    padding-right: 100px;
-    padding-left: 100px;
-    line-height: 25px;
+    padding: 40px 100px 0px 100px;
+    line-height: 40px;
     text-align: justify;
+    font-size: 20px;
 }
 
 
