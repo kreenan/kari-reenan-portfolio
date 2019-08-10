@@ -5,10 +5,13 @@
         <link href="css/main.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c0aec1d762.js"></script>
     </head>
+
     <body>
         <header>
-            <div class="full-width">
+            <div class="flex-container">
+                <div class="navigation">
                 <nav>
                     <ul>
                         <li><a href="#work">Work</a></li>
@@ -16,6 +19,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                </div>
                 <h1>Kari Reenan</h1>
                 <h3>&lt;Front End Web Developer/&gt;</h3>
             </div>
@@ -23,78 +27,118 @@
         </header>
         <main>
             <section id="work">
-                <div class="full-width">
-                    <h4>My Portfolio</h4>
-                    <h6>Click the images to see each example on a new page</h6>
-                    <div class="full-width">
-                    <div class="half-width">
-                        <a href="rogue-pickings/index.html" target="_blank"><img src="img/rogue-pickings-thumbnail.png" alt="rogue pickings site screenshot"></a>
+                <div class="flex-container">
+                    <div class="portfolio-header">
+                        <h4>My Portfolio</h4>
+                    <p>Click the images to see each example on a new page</p>
                     </div>
-                    <div class="half-width">
-                        <h5>Rogue Pickings Website</h5>
+                    <div class="portfolio">
+                    <div class="portfolio-items">
+                        <a href="rogue-pickings/index.html" target="_blank">
+                            <figure>
+                                <img src="img/rogue-pickings-thumbnail.png" alt="rogue pickings site screenshot">
+                            </figure>    
+                        </a>
+                    </div>
+                    <!-- <div class="portfolio-items">
+                        <h5>Rogue Pickings</h5>
                         <p>One Page Site from a PSD Design Comp<br>
                             Skills used: HTML, CSS, Photoshop, Google Fonts
 
                         </p>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="full-width">
-                    <div class="half-width">
-                        <a href="jubilee-austen/index.html" target="_blank"><img src="img/jubilee-thumbnail.png" alt="jubile austen site screenshot"></a>
+                <div class="portfolio">
+                    <div class="portfolio-items">
+                        <a href="jubilee-austen/index.html" target="_blank">
+                            <figure>
+                             <img src="img/jubilee-thumbnail.png" alt="jubile austen site screenshot">
+                            </figure>    
+                        </a>
                         </div>
-                        <div class="half-width">
-                            <h5>Jubilee Austen Project</h5>
+                        <!-- <div class="portfolio-items">
+                            <h5>Jubilee Austen</h5>
                             <p>One Page Site from a PSD Design Comp<br>
                                 Skills used: HTML, CSS, Photoshop, Google Fonts
                             </p>
-                        </div>
+                        </div> -->
                 </div>
-                <div class="full-width">
-                    <div class="half-width">
-                        <a href="https://kreenan.github.io/kari-elizabeth-design/" target="_blank"><img src="img/kari-elizabeth-design-thumbnail.png" alt="kari elizabeth design site screenshot"></a>
+                <div class="portfolio">
+                    <div class="portfolio-items">
+                        <a href="https://kreenan.github.io/kari-elizabeth-design/" target="_blank" id="karielizabethdesign">
+                            <figure>
+                                <img src="img/kari-elizabeth-design-thumbnail.png" alt="kari elizabeth design site screenshot" id="kari-elizabeth-design-image">
+                            </figure>
+                        </a>
                     </div>
-                    <div class="half-width">
-                        <h5>Kari Elizabeth Design site</h5>
+                    <!-- <div class="portfolio-items">
+                        <h5>Kari Elizabeth Design</h5>
                         <p>Redesign of site previously created & hosted on Wix<br>
                             Skills used: HTML, CSS, GitHub, Git
                         </p>
+                    </div> -->
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-items">
+                        <a href="https://kreenan.github.io/unplugged-site-206" target="_blank">
+                            <figure>
+                                <img src="img/unplugged-site-thumbnail" alt="unplugged website thumbnail">
+                            </figure>
+                        </a>
                     </div>
+                    <!-- <div class="portfolio-items">
+                        <h5>Unplugged Retreat</h5>
+                        <p>Responsive multi-page website created from PSD mockup<br>
+                            Skills used: Mobile-first coding, flexbox, GitHub, Git
+                        </p>
+                    </div> -->
                 </div>
                 </div>
             </section>
             <section id="about">
-                <div class="full-width">
+                <div class="flex-container">
                     <div class="about-section">
-                            <p><span id="name">Hi! I'm Kari</span>, a front-end web developer living &amp; creating in Western New York, with a passion for clean, minimal design.<br>
+                            <p><span id="name">Hi! I'm Kari,</span> a front-end web developer living &amp; creating in Western New York, with a passion for clean, minimal design.<br>
                                 When I'm not coding up a new website, you can most likely find me baking up something delicious to share with my friends (self-professed chocolate chip cookie fanatic here).<br>  
                                 In all my projects, I aim to write clean code that is easy to read &amp; maintain in order to promote collaboration with other developers.  I strive to keep up with best practices in semantic HTML and CSS in order to create websites built for the modern world.</p>
                 </div>
                 </div>
 
             </section>
-            <section id="contact">
-                <div class="full-width">
-                    <h4>Let's Connect</h4>
-                    <div class="third-width">
-                        <h5>Hire Me</h5>
-                        <p>Remote/ Rochester, NY</p>
-                        <p><a href="mailto:karireenan@gmail.com">karireenan@gmail.com</a></p>
-                    </div>
-                    <div class="third-width">
+            
+        </main>
+
+        <footer id="contact">
+            <div class="flex-container">
+                <div class="contact-header">
+                <h4>Let's Connect</h4>
+                </div>
+                <div class="contact-me">
+                <div class="contact-details">
+                    <h5>Hire Me</h5>
+                    <p>Remote/ Rochester, NY</p>
+                    <p><a href="mailto:karireenan@gmail.com">karireenan@gmail.com</a></p>
+                </div>
+                <div class="contact-details">
+                    <figure>
                         <img src="img/kari-headshot.jpeg" alt="headshot of kari reenan">
-                    </div>
-                    <div class="third-width">
-                        <h5>Follow Me</h5>
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/swensonkari"> <img src="img/linkedin-icon-small.png" alt="linkedin icon"> </a></li>
-                            <li><a href="https://github.com/kreenan"><img src="img/github-icon-small.png" alt="github icon"></a></li>
-                        </ul>
-                        
+                    </figure>
+                </div>
+                <div class="social">
+                    <h5>Follow Me</h5>  
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/swensonkari"> 
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/kreenan">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
+            </div>
 
-            </section>
-        </main>
+        </footer>
         
     </body>
 </html>

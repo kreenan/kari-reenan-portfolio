@@ -1,4 +1,8 @@
 /***** BASE STYLES *****/
+html {
+    font-size: 16px;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: Montserrat, Helvetica, sans-serif;
 }
@@ -7,220 +11,335 @@ header a, body p {
     font-weight: 200;
 }
 
+img {
+    width: 100%;
+}
 
-/***** GRID *****/
- .full-width {
-     width: 1200px;
-     margin: 0 auto;
-     clear: both;
+
+ .flex-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     padding: 0 10px;
  }
-
- .half-width {
-     width: 580px;
-     padding-left: 10px;
-     padding-right: 10px;
-     float: left;
- }
-
- .third-width {
-     width: 380px;
-     padding-left: 10px;
-     padding-right: 10px;
-     float: left;
- }
-
 
 /***** HEADER MAIN PAGE*****/
 header {
-    background-image: url('../img/yellow-flower-in-jars.jpg');
+    background-image: url('../img/flower-border.jpg');
     background-size: cover;
-    height: 700px;
+    /*height: 600px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 60px;
+
 }
 
-header .full-width {
-    padding-top: 100px;
+header .flex-container { 
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1, header h3 {
     text-align: center;
-    color: #2F4F4F;
+    color: #733743;
+    margin: 0;
+    width: 100%;
 }
 
 header h1 {
-    font-size: 130px;
+    font-size: 65px;
     font-weight: 400;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding-top: 40px;
 }
 
 header h3 {
-    font-size: 50px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 30px;
 }
+ header .navigation {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     order: 3;
+ }
 
-header nav {
-    text-align: right;
-}
+ header nav ul {
+     padding-top: 25px;
+     padding-bottom: 30px;
+     display: flex;
+     flex-direction: row;
+ }
 
+ 
 header ul {
     list-style: none;
 }
 
 header ul li {
     line-height: 30px;
+    padding-right: 20px;
 }
 
 header ul li a {
     text-decoration: none;
     color: #2F4F4F;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 200;
+    font-size: 25px;
 }
 
 /***** WORK MAIN PAGE*****/
-#work {
-    overflow: auto;
+#work, #work .flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.portfolio-header {
+   text-align: center;
+}
+
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#work h4,
+#work h5,
+#work h6 {
+    margin: 0;
 }
 
 #work h4 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    padding-top: 50px;
 }
 
 #work h5 {
     font-weight: 200;
-    font-size: 25px;
+    font-size: 35px;
 }
 
-#work h6 {
+#work p {
     text-align: center;
-    margin-top: -30px;
-    margin-bottom: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 30px;
 }
-
 
 #work img {
-    height: 300px;
-    width: 500px;
-    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    /*padding-bottom: 30px;*/
 }
 
+.portfolio-items #kari-elizabeth-design-image {
+    border: 1px solid lightgrey;
+}
 
 /***** ABOUT MAIN PAGE*****/
 
 #about {
-    background: url('../img/white-sand.jpg');
-    background-size: cover;
-    height: 600px;
-    padding-top: 50px;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+    /*height: 600px;*/
+    padding: 50px 10px 50px 10px;
 }
-/*** .about-section {
+/* .about-section {
      background-color: rgb(255,255, 255, .2);
-     height: 450px;
-     display: inline-block;
-     padding-top: 100px;
- }***/
+     width: 100%;
+     margin: 0;
+
+ }*/
+
 
 #about span {
-    color: #002db3;
+    color: #A03B60;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #about p {
     font-family: Montserrat, Helvetica, sans-serif;
     font-weight: 200;
-    padding: 40px 100px 0px 100px;
-    line-height: 40px;
+    padding: 40px 60px 40px 60px;
+    line-height: 50px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
 /***** CONTACT MAIN PAGE*****/
 #contact {
-    height: 350px;
-    background: whitesmoke;
+    background: rgb(230,230,230);
+background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(179,179,179,1) 100%);
+}
+
+#contact, #contact .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.contact-header {
+    text-align: center;
+    width: 100%;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
 }
 
 #contact h4 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+#contact h5 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    /* margin: 0;
+    padding: 50px 0px 20px 0px; */
+    width: 100%;
+}
+
+#contact p {
     text-align: center;
     font-size: 30px;
     margin: 0;
     padding-top: 20px;
 }
 
-#contact h5 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 200;
-    margin-top: 50px;
-}
-
-#contact p {
-    text-align: center;
-}
-
-#contact ul {
-    list-style: none;
-    text-align: center;
-}
-
-#contact ul li {
-    display: inline-block;
-    padding-right: 25px;
-
-}
-
-#contact ul li a img {
-    margin-top: 0px;
+footer .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 #contact a {
     text-decoration: none;
+    color: #733743;
 }
 
 #contact img {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px;
-    display: block;
-    border-radius: 100px;
+    border-radius: 50%
 }
 
-/***** WORK PAGE IN PROGRESS
-
-.work-page header {
-    height: 100px;
+#contact i {
+   font-size: 30px;
 }
 
-.work-page header .full-width {
-    padding-top: 0px;
+/* TABLET STYLES */
+
+@media screen and (min-width: 768px) {
+
+
+
 }
 
-.work-page header p {
-    margin: 0;
-    padding-top: 40px;
-    text-align: left;
-    color: white;
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1200px){
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul {
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 130px;
+}
+
+header h3 {
+    font-size: 50px;
+}
+
+/* PORTFOLIO - DESKTOP */
+
+#work p {
     font-size: 20px;
-    font-weight: 400;
 }
 
-.work-page nav {
-    text-align: right;
-    padding-top: 40px;
+/*#work h5 {
+    font-size: 30px;
+}*/
+
+.portfolio-header {
+    width: 100%;
 }
 
-.work-page ul {
-    margin: 0px;
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: 50%;
 }
 
-.work-page ul li {
-    display: inline-block;
-    padding-right: 25px;
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+}    
+
+.portfolio-items a {
+    /* width: 370px; */
+    padding: 0px 10px;
+}
+
+
+.portfolio h5,
+.portfolio p {
+    display: none;
+}
 
 }
-*****/
