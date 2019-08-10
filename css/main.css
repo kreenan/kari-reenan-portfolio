@@ -342,4 +342,28 @@ header h3 {
     display: none;
 }
 
+/* CONTACT */
+
+.contact-me {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 150px;
+}
+
+#contact .contact-details {
+    flex-basis: 30%;
+}
+
+#contact .contact-details p {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#contact .social {
+    flex-basis: 30%;
+}
+
+
+
 }
