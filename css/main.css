@@ -11,9 +11,6 @@ header a, body p {
     font-weight: 200;
 }
 
-img {
-    width: 100%;
-}
 
 
  .flex-container {
@@ -93,8 +90,63 @@ header ul li a {
     font-size: 25px;
 }
 
-/***** WORK MAIN PAGE*****/
-#work, #work .flex-container {
+/*** SERVICES HOME PAGE ***/
+
+#services, #services .flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.services-header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.services-header a {
+    text-decoration: none;
+    color: #2F4F4F;
+}
+
+.services-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    height: 375px;
+    background-color: rgba(246,204,204,0.6);
+    margin: 25px 70px;
+    border-radius: 50%;
+}
+
+.services-items img {
+    width: 25%;
+    padding-top: 40px;
+}
+
+.services-items h4 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.services-items a {
+    text-decoration: none;
+    color: #2F4F4F;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+/***** WORK PORTFOLIO PAGE*****/
+#work, #work .flex-container,
+#work-two, #work-two .flex-container,
+#work-three, #work-three .flex-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -124,22 +176,34 @@ header ul li a {
 
 #work h4,
 #work h5,
-#work h6 {
+#work h6,
+#work-two h4,
+#work-two h5,
+#work-two h6,
+#work-three h4,
+#work-three h5,
+#work-three h6 {
     margin: 0;
 }
 
-#work h4 {
+#work h4,
+#work-two h4,
+#work-three h4 {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     padding-top: 50px;
 }
 
-#work h5 {
+#work h5,
+#work-two h5,
+#work-three h5 {
     font-weight: 200;
     font-size: 35px;
 }
 
-#work p {
+#work p,
+#work-two p,
+#work-three p {
     text-align: center;
     padding-top: 10px;
     margin-bottom: 10px;
@@ -147,7 +211,9 @@ header ul li a {
     font-size: 30px;
 }
 
-#work img {
+#work img,
+#work-two img,
+#work-three img {
     width: 100%;
     height: auto;
     /*padding-bottom: 30px;*/
@@ -303,15 +369,27 @@ header h3 {
     font-size: 50px;
 }
 
-/* PORTFOLIO - DESKTOP */
+/* SERVICES - HOMEPAGE - DESKTOP */
 
-#work p {
+#services, #services .flex-container {
+   flex-direction: row;
+}
+
+
+.services-items {
+    flex-basis: 30%;
+    margin: 25px 20px;
+}
+
+
+/* PORTFOLIO PAGE- DESKTOP */
+
+#work p,
+#work-two p,
+#work-three p {
     font-size: 20px;
 }
 
-/*#work h5 {
-    font-size: 30px;
-}*/
 
 .portfolio-header {
     width: 100%;
@@ -341,6 +419,8 @@ header h3 {
 .portfolio p {
     display: none;
 }
+
+
 
 /* CONTACT */
 
