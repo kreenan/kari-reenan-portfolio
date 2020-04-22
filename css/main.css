@@ -23,16 +23,17 @@ header a, body p {
 
 /***** HEADER MAIN PAGE*****/
 header {
-    background-image: url('../img/flower-border.jpg');
+    background-image: url('../img/jess-bailey-unsplash.jpg');
     background-size: cover;
     /*height: 600px;*/
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 
 }
+
 
 header .flex-container { 
     padding-top: 200px;
@@ -67,7 +68,7 @@ header h3 {
  }
 
  header nav ul {
-     padding-top: 25px;
+     padding-top: 40px;
      padding-bottom: 30px;
      display: flex;
      flex-direction: row;
@@ -92,6 +93,11 @@ header ul li a {
 
 /*** SERVICES HOME PAGE ***/
 
+#services {
+    background: rgb(248,248,248);
+background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(230,230,230,1) 100%);
+}
+
 #services, #services .flex-container {
     width: 100%;
     display: flex;
@@ -107,6 +113,10 @@ header ul li a {
     padding-bottom: 30px;
 }
 
+.services-header h2 {
+    padding-top: 25px;
+}
+
 .services-header a {
     text-decoration: none;
     color: #2F4F4F;
@@ -120,7 +130,7 @@ header ul li a {
     text-align: center;
     padding-bottom: 20px;
     height: 375px;
-    background-color: rgba(246,204,204,0.6);
+    background-color: rgba(246,204,204,0.2);
     margin: 25px 70px;
     border-radius: 50%;
 }
@@ -226,8 +236,8 @@ header ul li a {
 /***** ABOUT MAIN PAGE*****/
 
 #about {
-    background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+    background: rgb(230,230,230);
+background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(215,215,215,1) 100%);
     /*height: 600px;*/
     padding: 50px 10px 50px 10px;
 }
@@ -250,15 +260,14 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 
     font-weight: 200;
     padding: 40px 60px 40px 60px;
     line-height: 50px;
-    text-align: justify;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
 /***** CONTACT MAIN PAGE*****/
 #contact {
-    background: rgb(230,230,230);
-background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(179,179,179,1) 100%);
+    background: rgb(215,215,215);
+background: linear-gradient(180deg, rgba(215,215,215,1) 0%, rgba(248,248,248,1) 100%);
 }
 
 #contact, #contact .flex-container {
@@ -333,6 +342,11 @@ footer .social-icons {
 
 #contact i {
    font-size: 30px;
+}
+
+#contact .icon-attribute p {
+    font-size: 16px;
+    padding-bottom: 20px;
 }
 
 /* TABLET STYLES */
