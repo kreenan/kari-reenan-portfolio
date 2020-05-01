@@ -11,8 +11,6 @@ header a, body p {
     font-weight: 200;
 }
 
-
-
  .flex-container {
      display: flex;
      justify-content: center;
@@ -50,15 +48,16 @@ header h1, header h3 {
 }
 
 header h1 {
-    font-size: 65px;
+    font-size: 100px;
     font-weight: 400;
-    padding-top: 40px;
+    padding-top: 50px;
+    letter-spacing: 3px;
 }
 
 header h3 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
-    padding-top: 30px;
+    padding-top: 55px;
 }
  header .navigation {
      display: flex;
@@ -77,18 +76,19 @@ header h3 {
  
 header ul {
     list-style: none;
+    padding-left: 0;
 }
 
 header ul li {
     line-height: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 header ul li a {
     text-decoration: none;
     color: #2F4F4F;
-    font-weight: 200;
-    font-size: 25px;
+    font-weight: 300;
+    font-size: 30px;
 }
 
 /*** SERVICES HOME PAGE ***/
@@ -115,6 +115,8 @@ background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(230,230,230,1) 
 
 .services-header h2 {
     padding-top: 25px;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
 .services-header a {
@@ -129,7 +131,7 @@ background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(230,230,230,1) 
     flex-direction: column;
     text-align: center;
     padding-bottom: 20px;
-    height: 375px;
+    height: 450px;
     background-color: rgba(246,204,204,0.2);
     margin: 25px 70px;
     border-radius: 50%;
@@ -141,19 +143,151 @@ background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(230,230,230,1) 
 }
 
 .services-items h4 {
-    font-weight: 200;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.services-items p {
+    font-size: 22px;
 }
 
 .services-items a {
     text-decoration: none;
     color: #2F4F4F;
-    font-weight: 200;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/***** ABOUT MAIN PAGE*****/
+
+#about {
+    background: rgb(230,230,230);
+background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(215,215,215,1) 100%);
+    padding: 50px 10px 50px 10px;
 }
 
 
+#about span {
+    color: #A03B60;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#about p {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 40px 60px 40px 60px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+
+/***** CONTACT MAIN PAGE*****/
+#contact {
+    background: rgb(215,215,215);
+background: linear-gradient(180deg, rgba(215,215,215,1) 0%, rgba(248,248,248,1) 100%);
+}
+
+#contact, #contact .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.contact-header {
+    text-align: center;
+    width: 100%;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+#contact h4 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+#contact h5 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    /* margin: 0;
+    padding: 50px 0px 20px 0px; */
+    width: 100%;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #733743;
+}
+
+#contact img {
+    margin-top: 40px;
+    border-radius: 50%
+}
+
+#contact i {
+   font-size: 30px;
+}
+
+
+#contact .icon-attribute p {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+
+
 /***** WORK PORTFOLIO PAGE*****/
+
+#work {
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+}
+
+#work-two {
+    background: rgb(240,240,240);
+background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 100%);
+}
+
+#work-three {
+    background: rgb(230,230,230);
+background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(215,215,215,1) 100%);
+}
+
 #work, #work .flex-container,
 #work-two, #work-two .flex-container,
 #work-three, #work-three .flex-container {
@@ -229,124 +363,16 @@ background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(230,230,230,1) 
     /*padding-bottom: 30px;*/
 }
 
-.portfolio-items #kari-elizabeth-design-image {
-    border: 1px solid lightgrey;
-}
-
-/***** ABOUT MAIN PAGE*****/
-
-#about {
-    background: rgb(230,230,230);
-background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(215,215,215,1) 100%);
-    /*height: 600px;*/
-    padding: 50px 10px 50px 10px;
-}
-/* .about-section {
-     background-color: rgb(255,255, 255, .2);
-     width: 100%;
-     margin: 0;
-
- }*/
-
-
-#about span {
-    color: #A03B60;
-    font-weight: 300;
-    font-size: 35px;
-}
-
-#about p {
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-weight: 200;
-    padding: 40px 60px 40px 60px;
-    line-height: 50px;
-    font-size: 25px;
-}
-
-
-/***** CONTACT MAIN PAGE*****/
-#contact {
-    background: rgb(215,215,215);
-background: linear-gradient(180deg, rgba(215,215,215,1) 0%, rgba(248,248,248,1) 100%);
-}
-
-#contact, #contact .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-}
-
-.contact-me {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-.contact-header {
-    text-align: center;
-    width: 100%;
-}
-
-.contact-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-}
-
-#contact h4 {
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    padding-top: 50px;
-}
-
-#contact h5 {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 200;
-    /* margin: 0;
-    padding: 50px 0px 20px 0px; */
-    width: 100%;
-}
-
-#contact p {
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    padding-top: 20px;
-}
-
-footer .social-icons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-#contact a {
-    text-decoration: none;
-    color: #733743;
-}
-
-#contact img {
-    margin-top: 40px;
-    border-radius: 50%
-}
-
-#contact i {
-   font-size: 30px;
-}
-
-#contact .icon-attribute p {
-    font-size: 16px;
-    padding-bottom: 20px;
+.portfolio-items #kari-elizabeth-design-image,
+.portfolio-items #lolcatclock-image,
+.portfolio-items #magic8-ball-image,
+.portfolio-items #election-map-image,
+.portfolio-items #jubilee-image,
+.portfolio-items #rogue-pickings-image,
+.portfolio-items #unplugged-image,
+.portfolio-items #simple-wordpress-image
+ {
+    border: 1px solid darkgrey;
 }
 
 /* TABLET STYLES */
@@ -436,7 +462,7 @@ header h3 {
 
 
 
-/* CONTACT */
+/* CONTACT DESKTOP*/
 
 .contact-me {
     flex-direction: row;
@@ -456,8 +482,4 @@ header h3 {
 
 #contact .social {
     flex-basis: 30%;
-}
-
-
-
 }
