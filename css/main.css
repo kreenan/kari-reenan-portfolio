@@ -370,7 +370,8 @@ background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(215,215,215,1) 
 .portfolio-items #jubilee-image,
 .portfolio-items #rogue-pickings-image,
 .portfolio-items #unplugged-image,
-.portfolio-items #simple-wordpress-image
+.portfolio-items #simple-wordpress-image,
+.portfolio-items #accelerate-image
  {
     border: 1px solid darkgrey;
 }
